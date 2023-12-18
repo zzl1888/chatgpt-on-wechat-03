@@ -1,7 +1,7 @@
 {
   "channel_type": "wx",
   "model": "",
-  "open_ai_api_key": "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",
+  "open_ai_api_key": "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",
   "text_to_image": "dall-e-2",
   "voice_to_text": "openai",
   "text_to_voice": "openai",
