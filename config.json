@@ -1,7 +1,6 @@
 {
-  "channel_type": "wx",
+  "channel_type": "wechatmp",
   "model": "",
-  "open_ai_api_key": "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",
   "text_to_image": "dall-e-2",
   "voice_to_text": "openai",
   "text_to_voice": "openai",
@@ -38,5 +37,11 @@
   "subscribe_msg": "感谢您的关注！\n这里是ChatGPT，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。",
   "use_linkai": false,
   "linkai_api_key": "",
-  "linkai_app_code": ""
+  "linkai_app_code": "",
+
+  "wechatmp_app_id": "wx549bc50ba2975340",
+  "wechatmp_app_secret": "821c90e4d86bb6455fc32a52316f9d1d",
+  "wechatmp_aes_key": "",
+  "wechatmp_token": "test_token",
+  "wechatmp_port": 80
 }
