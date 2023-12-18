@@ -1,7 +1,7 @@
 {
   "channel_type": "wx",
   "model": "",
-  "open_ai_api_key": "YOUR API KEY",
+  "open_ai_api_key": "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",
   "text_to_image": "dall-e-2",
   "voice_to_text": "openai",
   "text_to_voice": "openai",
@@ -9,6 +9,8 @@
   "hot_reload": false,
   "single_chat_prefix": [
     "bot",
+    "ai",
+    "惠生",
     "@bot"
   ],
   "single_chat_reply_prefix": "[bot] ",
