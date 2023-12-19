@@ -6,13 +6,7 @@
   "text_to_voice": "openai",
   "proxy": "",
   "hot_reload": false,
-  "single_chat_prefix": [
-    "bot",
-    "ai",
-    "惠生",
-    "@bot"
-  ],
-  "single_chat_reply_prefix": "[bot] ",
+  "single_chat_reply_prefix": "小惠:\n",
   "group_chat_prefix": [
     "@bot"
   ],
@@ -34,7 +28,7 @@
   "character_desc": "你是ChatGPT, 一个由OpenAI训练的大型语言模型, 你旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。",
   "temperature": 0.7,
   "top_p": 1,
-  "subscribe_msg": "感谢您的关注！\n这里是ChatGPT，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。",
+  "subscribe_msg": "感谢您的关注！\n这里是惠生AI助手，您可以向我咨询您遇到的医疗问题。\n支持文字和语音输入。\n 例如您可以提问：肚子疼怎么办？",
   "use_linkai": false,
   "linkai_api_key": "",
   "linkai_app_code": "",
@@ -43,5 +37,9 @@
   "wechatmp_app_secret": "821c90e4d86bb6455fc32a52316f9d1d",
   "wechatmp_aes_key": "",
   "wechatmp_token": "test_token",
-  "wechatmp_port": 80
+  "wechatmp_port": 80,
+  "use_linkai": true,
+  "linkai_api_key": "Link_jrQoRKfmlHP9D7EUKw20vcbJCAdmjg2hgaGJl2vMtz",
+  "linkai_app_code": "D4qDBaRZ"
+
 }

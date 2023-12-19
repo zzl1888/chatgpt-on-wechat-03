@@ -81,7 +81,7 @@ class LinkAIBot(Bot):
             if session_message[0].get("role") == "system":
                 if app_code or model == "wenxin":
                     session_message.pop(0)
-
+            logger.info(model)
             body = {
                 "app_code": app_code,
                 "messages": session_message,

@@ -68,12 +68,9 @@ class Query:
                         trigger_prefix = conf().get("single_chat_prefix", [""])[0]
                         if trigger_prefix or not supported:
                             if trigger_prefix:
-                                reply_text = textwrap.dedent(
-                                    f"""\
-                                    请输入'{trigger_prefix}'接你想说的话跟我说话。
-                                    例如:
-                                    {trigger_prefix}你好，很高兴见到你。"""
-                                )
+                                pre_text = (f"您好，我是惠生ai小助手, 请输入{trigger_prefix}接您想咨询的问题。"
+                                            f"例如：小惠你好，我最近嗓子有点疼")
+                                reply_text = textwrap.dedent(pre_text)
                             else:
                                 reply_text = textwrap.dedent(
                                     """\
@@ -118,7 +115,7 @@ class Query:
                         return "success"
                     else:  # request_cnt == 3:
                         # return timeout message
-                        reply_text = "【正在思考中，回复任意文字尝试获取回复】"
+                        reply_text = "【小惠正在思考中，您可以回复任意文字尝试获取～😊】"
                         replyPost = create_reply(reply_text, msg)
                         return encrypt_func(replyPost.render())
 
@@ -147,6 +144,8 @@ class Query:
                             MAX_UTF8_LEN - len(continue_text.encode("utf-8")),
                             max_split=1,
                         )
+                        logging.info(splits[0])
+          
                         reply_text = splits[0] + continue_text
                         channel.cache_dict[from_user].append(("text", splits[1]))
 
